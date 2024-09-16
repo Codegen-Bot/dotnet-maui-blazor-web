@@ -29,6 +29,7 @@ public class Exports
                 // TODO - remove the ExampleMiniBot entry from this list because it creates a hello world file
                 // that won't be useful in real life.
                 new ExampleMiniBot(),
+                new MauiBlazorWebMiniBot(),
             ];
 
             // Run each minibot in order
