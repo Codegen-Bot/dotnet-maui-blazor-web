@@ -1,7 +1,5 @@
 using System;
-using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using System.Threading;
 using CodegenBot;
 using Extism;
 
@@ -28,7 +26,7 @@ public class Exports
             [
                 // TODO - remove the ExampleMiniBot entry from this list because it creates a hello world file
                 // that won't be useful in real life.
-                new ExampleMiniBot(),
+                //new ExampleMiniBot(),
                 new MauiBlazorWebMiniBot(),
             ];
 
