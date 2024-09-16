@@ -20,7 +20,7 @@
     },
     {
       "botId": "bot://hub/dotnet/botfactory",
-      "botVersion": "0.0.1-alpha52",
+      "botVersion": "0.0.1-alpha54",
       "configuration": {
         "id": "bot://hub/dotnet/new/maui-blazor-web",
         "outputPath": "MauiBlazorWeb",
@@ -34,7 +34,16 @@
             "whitelist": [
               "**/*"
             ],
-            "fieldDefinitions": []
+            "fieldDefinitions": [
+              {
+                "needle": "MyApp",
+                "fieldName": "appName"
+              },
+              {
+                "needle": "com.loumtechnologies.myapp",
+                "fieldName": "applicationId"
+              }
+            ]
           }
         ]
       },
