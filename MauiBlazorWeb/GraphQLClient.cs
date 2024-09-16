@@ -214,6 +214,8 @@ public static partial class GraphQLOperations
                 query GetConfiguration {
                   configuration {
                     outputPath
+                    appName
+                    applicationId
                   }
                 }
                 """,
@@ -483,6 +485,12 @@ public class GetConfiguration
 {
     [JsonPropertyName("outputPath")]
     public required string OutputPath { get; set; }
+
+    [JsonPropertyName("appName")]
+    public required string AppName { get; set; }
+
+    [JsonPropertyName("applicationId")]
+    public required string ApplicationId { get; set; }
 }
 
 public class GetFileContentsData
