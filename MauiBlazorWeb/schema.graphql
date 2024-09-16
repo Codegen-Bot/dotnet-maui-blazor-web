@@ -20,6 +20,8 @@ type CaretTag @source(name: "CaretTag", schema: "output") {
 type Configuration @source(name: "Configuration", schema: "Configuration") {
   "It's best to add documentation strings for your fields, because they are displayed\nwhen codegen.bot prompts the bot user for each value."
   outputPath: String!
+  appName: String!
+  applicationId: String!
 }
 
 type File @source(name: "File", schema: "filesystem") {
