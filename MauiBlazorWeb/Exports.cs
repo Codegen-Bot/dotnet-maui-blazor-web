@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using System.Threading;
 using CodegenBot;
 using Extism;
 
@@ -25,8 +27,9 @@ public class Exports
             IMiniBot[] miniBots =
             [
                 // TODO - remove the ExampleMiniBot entry from this list because it creates a hello world file
-                // that won't be useful in real life.
-                //new ExampleMiniBot(),
+                // that won't be useful in real life, and could even be harmful if you're writing to configuration.OutputPath elsewhere,
+                // or if you're assuming configuration.OutputPath is a directory and you're writing to files under it.
+                // new ExampleMiniBot(),
                 new MauiBlazorWebMiniBot(),
             ];
 

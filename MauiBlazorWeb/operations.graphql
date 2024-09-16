@@ -1,6 +1,8 @@
 query GetConfiguration() {
     configuration {
         outputPath
-            appName    applicationId
+            appName
+        applicationId
+    
     }
 }
