@@ -20,7 +20,7 @@
     },
     {
       "botId": "bot://hub/dotnet/botfactory",
-      "botVersion": "0.0.1-alpha54",
+      "botVersion": "0.0.1-alpha58",
       "configuration": {
         "id": "bot://hub/dotnet/new/maui-blazor-web",
         "outputPath": "MauiBlazorWeb",
