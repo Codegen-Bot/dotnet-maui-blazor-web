@@ -3,5 +3,6 @@ query GetConfiguration {
     outputPath
     appName
     applicationId
+    bootstrap
   }
 }

@@ -6,4 +6,5 @@ type Configuration {
   outputPath: String!
   appName: String!
   applicationId: String!
+  bootstrap: Boolean!
 }
