@@ -216,6 +216,7 @@ public static partial class GraphQLOperations
                     outputPath
                     appName
                     applicationId
+                    bootstrap
                   }
                 }
                 """,
@@ -491,6 +492,9 @@ public class GetConfiguration
 
     [JsonPropertyName("applicationId")]
     public required string ApplicationId { get; set; }
+
+    [JsonPropertyName("bootstrap")]
+    public required bool Bootstrap { get; set; }
 }
 
 public class GetFileContentsData
