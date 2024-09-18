@@ -1,15 +1,15 @@
 {
   "type": "wasm",
   "id": "bot://hub/dotnet/new/maui-blazor-web",
+  "wasm": "bin/Release/net8.0/wasi-wasm/AppBundle/MauiBlazorWeb.wasm",
   "readme": "Bot.md",
   "configurationSchema": "configurationSchema.graphql",
   "dependenciesSchema": "schema.graphql",
-  "wasm": "bin/Release/net8.0/wasi-wasm/AppBundle/MauiBlazorWeb.wasm",
-  "deduplicateConfigurationSchema": true,
   "dependencies": {
     "bot://core/output": "1.0.0",
     "bot://core/filesystem": "1.0.0",
-    "bot://core/log": "1.0.0"
+    "bot://core/log": "1.0.0",
+    "bot://hub/dotnet/solution": "0.0.1-alpha5"
   },
   "exec": {
     "devenv": "dotnet workload install wasi-experimental",
