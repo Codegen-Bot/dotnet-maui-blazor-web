@@ -4,7 +4,17 @@ type Configuration {
   when codegen.bot prompts the bot user for each value.
   """
   outputPath: String!
+  """
+  The name of the application. Project names will be based on this. Generally this should be a CamelCase string.
+  """
   appName: String!
+  """
+  The application ID, which is used in app stores. For example, com.example.myapp.
+  """
   applicationId: String!
+  """
+  Whether or not to include bootstrap in the template. If another css framework is going to be used, such as TailwindCSS,
+  set this to false.
+  """
   bootstrap: Boolean!
 }
